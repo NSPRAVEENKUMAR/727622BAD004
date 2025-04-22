@@ -2,25 +2,72 @@
   text-align: center;
   padding: 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  color: #333;
 }
 
 .input-section {
   margin: 1rem 0;
 }
 
+.input-section label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
 .input-section select,
 .input-section button {
   margin-left: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.input-section select:focus,
+.input-section button:focus {
+  outline: none;
+  border-color: #0078d4;
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.5);
+}
+
+.input-section button {
+  background-color: #0078d4;
+  color: white;
+  cursor: pointer;
+}
+
+.input-section button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.input-section button:hover:not(:disabled) {
+  background-color: #005a9e;
 }
 
 .output-section {
   margin-top: 2rem;
   text-align: left;
   display: inline-block;
-  background: #f7f7f7;
+  background: white;
   padding: 1rem 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', Courier, monospace;
+  color: #222;
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #b00020;
+  font-weight: 600;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
