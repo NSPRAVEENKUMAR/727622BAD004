@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-section {
+  margin: 1rem 0;
+}
+
+.input-section select,
+.input-section button {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.output-section {
+  margin-top: 2rem;
+  text-align: left;
+  display: inline-block;
+  background: #f7f7f7;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
